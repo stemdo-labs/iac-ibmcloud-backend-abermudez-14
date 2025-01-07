@@ -27,11 +27,6 @@ COPY --from=build-stage /app/target/*.jar app.jar
 EXPOSE 8080
 
 
-ENV SPRING_DB_HOST=10.0.34.4
-ENV SPRING_DB_PORT=5432
-ENV SPRING_DB_NAME=proyectofinal
-ENV SPRING_DB_USER=alejandroBD
-ENV SPRING_DB_PASSWORD=1234
 
 # Comando de inicio
 CMD ["java", "-jar", "app.jar"]
